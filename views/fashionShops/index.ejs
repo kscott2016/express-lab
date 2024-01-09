@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Dog List</title>
+  <title>Best Fashion Shops</title>
 </head>
 <body>
   <h1><%= intro %></h1>
 
   <ul>
-    <% dogBreeds.forEach(breed => { %>
-    <li> <%= breed.name %> - <%= breed.group==="working group" ? 'earns his kibbles and bits' : 'needs a job' %> </li>
+    <% shops.forEach(shop => { %>
+    <li> <%= shop.name %> sells to women and <%= shop.offersMen ? 'men' : 'sells accessories' %> </li>
     <% }) %>
  
    </ul>

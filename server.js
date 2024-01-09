@@ -2,6 +2,7 @@
 
 import express from 'express'
 import {breeds} from './data/dogBreeds-data.js'
+import {fashionShops} from './data/fashionShops-data.js'
 
 // create Express app
 
@@ -30,6 +31,14 @@ app.get('/dogs', function(req,res){
   res.render('breeds/index',{
     intro: 'These are really cute dogs',
     dogBreeds: breeds
+  })
+})
+
+app.get('/fashion', function(req,res){
+
+  res.render('fashionShops/index',{
+    intro: 'Shop here to look gorgeous',
+    shops: fashionShops
   })
 })
 
